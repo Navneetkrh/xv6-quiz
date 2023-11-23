@@ -140,6 +140,7 @@ Please write your answers here
 
 13. The file system in XV6 has a hierarchical structure with key components:
 
+
 14. difference between system calls and library functions in the context of XV6
 
    system calls : provide the interface between a process and the operating system.for example open,read,write,close,fork,exit are system calls in xv6.
@@ -153,11 +154,17 @@ Please write your answers here
    - ls: Lists directory contents.
    - cd: Changes the current directory.
    - mkdir: Creates a new directory.
+
 17. Process synchronization is essential for managing shared resources and avoiding conflicts. Mechanisms include locks, semaphores, and atomic operations.
 
-18. Interrupts are events that occur when prog
+18. Interrupts are events that occur when program execution is interrupted. They are handled by the kernel and are essential for system operation.
 
 19. Virtual Memory is a storage scheme that provides user an illusion of having a very big main memory.
+   Virtual memory is implemented in XV6 using paging.
+   Advantages of using virtual memory include:
+   - user is able to run programs that are larger than the physical memory
+   - user is able to run more programs at the same time
+   
 
 20. The boot process of XV6 involves these steps:
 
