@@ -138,7 +138,13 @@ Please write your answers here
    RUNNING : The process is currently being executed.
    ZOMBIE : The process has finished execution but is still in the process table.
 
-13. The file system in XV6 has a hierarchical structure with key components:
+13. The XV6 file system is a simplified Unix-like file system. Key components include:
+
+Superblock: Contains data about the file system like size, number of inodes, etc.
+Inodes: data of files/directories, including size, type, and block pointers.
+Data blocks: Store actual file data.
+Bitmap: Tracks free blocks for allocation.
+
 
 
 
