@@ -141,13 +141,15 @@ Please write your answers here
 13. The file system in XV6 has a hierarchical structure with key components:
 
 
+
 14. difference between system calls and library functions in the context of XV6
 
    system calls : provide the interface between a process and the operating system.for example open,read,write,close,fork,exit are system calls in xv6.
 
    library functions : higher-level functions provided by libraries. They use system calls internally. Examples include printf() and malloc().
 
-15. memeory paging is a technique where physical memory is divided into fixed-size pages. Paging allows for efficient use of memory, facilitates memory protection, and enables virtual memory.
+15. In XV6, memory is divided into frames. Each process has a page table mapping its logical memory (pages) to these frames. When a process accesses memory, the paging system translates the logical address to a physical one.
+Paging is beneficial because it allows the operating system to use virtual memory. This means that the logical memory of a process can be larger than the physical memory of the system allows the operating system to run more processes at the same time.
 
 
 16. three essential shell commands in the XV6 operating system.
@@ -155,7 +157,10 @@ Please write your answers here
    - cd: Changes the current directory.
    - mkdir: Creates a new directory.
 
-17. Process synchronization is essential for managing shared resources and avoiding conflicts. Mechanisms include locks, semaphores, and atomic operations.
+17. Process synchronization is essential for managing shared resources and avoiding conflicts.
+   In XV6, synchronization is achieved using locks and semaphores.
+   Locks are used to ensure that only one process can access a resource at a time.
+   Semaphores are used to control access to a resource that has a limited number of instances.
 
 18. Interrupts are events that occur when program execution is interrupted. They are handled by the kernel and are essential for system operation.
 
@@ -164,7 +169,7 @@ Please write your answers here
    Advantages of using virtual memory include:
    - user is able to run programs that are larger than the physical memory
    - user is able to run more programs at the same time
-   
+
 
 20. The boot process of XV6 involves these steps:
 
