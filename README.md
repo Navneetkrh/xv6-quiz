@@ -117,3 +117,138 @@ Welcome to the XV Quiz for CSL 3030 - Operating Systems!
 
 ## Answers
 Please write your answers here
+
+1. b. A Unix-like operating system
+2. c. BSD
+3. a. FAT32
+4. b. As interrupts
+5. a. 128
+6. c. Sh
+7. a. Round-robin scheduling
+8. a. Paging
+9. b. Using hardware interrupts
+10. b. No
+11. c. MIT
+
+12. There are six process states in XV6:
+   UNUSED: The process is not in use.
+   EMBRYO : The process is being created.
+   SLEEPING : The process is waiting for an event or resource.
+   RUNNABLE : The process is ready to run but waiting for its turn.
+   RUNNING : The process is currently being executed.
+   ZOMBIE : The process has finished execution but is still in the process table.
+
+13. The file system in XV6 has a hierarchical structure with key components:
+
+14. difference between system calls and library functions in the context of XV6
+
+   system calls : provide the interface between a process and the operating system.for example open,read,write,close,fork,exit are system calls in xv6.
+
+   library functions : higher-level functions provided by libraries. They use system calls internally. Examples include printf() and malloc().
+
+15. memeory paging is a technique where physical memory is divided into fixed-size pages. Paging allows for efficient use of memory, facilitates memory protection, and enables virtual memory.
+
+
+16. three essential shell commands in the XV6 operating system.
+   - ls: Lists directory contents.
+   - cd: Changes the current directory.
+   - mkdir: Creates a new directory.
+17. Process synchronization is essential for managing shared resources and avoiding conflicts. Mechanisms include locks, semaphores, and atomic operations.
+
+18. Interrupts are events that occur when prog
+
+19. Virtual Memory is a storage scheme that provides user an illusion of having a very big main memory.
+
+20. The boot process of XV6 involves these steps:
+
+BIOS initializes the system and loads the boot loader from the boot sector.
+The boot loader loads the XV6 kernel into memory.
+The boot loader transfers control to the kernel.
+The kernel initializes itself and creates the first user process.
+The kernel starts the scheduler to run the first user process.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Multiple-Choice Questions
+
+1. b. A Unix-like operating system
+2. c. BSD
+3. a. FAT32
+4. b. As interrupts
+5. a. 128
+6. c. Sh
+7. a. Round-robin scheduling
+8. a. Paging
+9. b. Using hardware interrupts
+10. b. No
+11. c. MIT
+
+## Theoretical Questions
+
+12. *Process States in XV6:*
+   In XV6, a process can be in one of the three states: 
+   - *Running*: The process is currently being executed.
+   - *Runnable*: The process is ready to run but waiting for its turn.
+   - *Sleeping*: The process is waiting for some event or resource.
+
+13. *File System Structure in XV6:*
+   The file system in XV6 has a hierarchical structure with key components:
+   - *Inodes*: Represent files and contain metadata.
+   - *Directories*: Organize files hierarchically.
+   - *Blocks*: Basic units of storage.
+   - *Superblock*: Contains information about the file system.
+
+14. *System Calls vs. Library Functions in XV6:*
+   - *System Calls*: Requests to the kernel for low-level operations. Examples include fork() and exec().
+   - *Library Functions*: Higher-level functions provided by libraries. They use system calls internally. Examples include printf() and malloc().
+
+15. *Memory Paging in XV6:*
+   - XV6 uses a paging mechanism where physical memory is divided into fixed-size pages.
+   - Paging allows for efficient use of memory, facilitates memory protection, and enables virtual memory.
+
+16. *Shell Commands in XV6:*
+   - *ls*: Lists directory contents.
+   - *cd*: Changes the current directory.
+   - *cp*: Copies files or directories.
+
+17. *Process Synchronization in XV6:*
+   - Essential for managing shared resources and avoiding conflicts.
+   - Mechanisms include locks, semaphores, and atomic operations.
+
+18. *Interrupt Handling in XV6:*
+   - Interrupts are events that alter the normal execution flow.
+   - Handled through interrupt service routines (ISRs) triggered by hardware or software events.
+   - Significance: Enables asynchronous handling of events and improves system responsiveness.
+
+19. *Virtual Memory in XV6:*
+   - Provides the illusion of a larger memory space than physically available.
+   - Implemented through demand paging, allowing pages to be loaded into memory only when needed.
+
+20. *Boot Process in XV6:*
+   - BIOS/UEFI initialization.
+   - Bootloader (e.g., GRUB) loads XV6 kernel into memory.
+   - Kernel initialization, sets up memory, filesystems, and essential data structures.
+   - Transfer control to the main function, initiating the operating system.
+
+Feel free to reach out if you have any further questions or need clarifications!
+
